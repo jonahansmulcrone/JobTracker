@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Job Trackr",
+    "version": "1.0.0",
+    "description": "A minimal job application tracker that works for Google Sheets API",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
