@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Job",
+    "version": "1.0.0",
+    "description": "A ReactJS Application for tracking job applications",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["scripts/content.js"]
+      }
+    ]
+  }
